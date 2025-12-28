@@ -1,0 +1,21 @@
+[Unit]
+Description=Phonex Voice Engine
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/phonex_system
+Environment="PATH=/var/www/html/phonex_system/venv/bin"
+ExecStart=/var/www/html/phonex_system/venv/bin/uvicorn init:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=3
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=phonex
+
+[Install]
+WantedBy=multi-user.target

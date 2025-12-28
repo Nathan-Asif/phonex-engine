@@ -1,0 +1,58 @@
+# Phonex Engine - Combined Requirements
+
+# FastAPI Server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# MeloTTS Dependencies
+txtsplit
+torch
+torchaudio
+cached_path
+transformers==4.27.4
+num2words==0.5.12
+unidic_lite==1.0.8
+unidic==1.1.0
+mecab-python3==1.0.9
+pykakasi==2.2.1
+fugashi==1.3.0
+g2p_en==2.1.0
+anyascii==0.3.2
+jamo==0.4.1
+gruut[de,es,fr]==2.2.3
+g2pkk>=0.1.1
+librosa==0.9.1
+pydub==0.25.1
+eng_to_ipa==0.0.2
+inflect==7.0.0
+unidecode==1.3.7
+pypinyin==0.50.0
+cn2an==0.5.22
+jieba==0.42.1
+langid==1.1.6
+tqdm
+tensorboard==2.16.2
+loguru==0.7.2
+nltk
+
+# OpenVoice V2 Dependencies
+openai-whisper
+whisper-timestamped
+wavmark>=0.0.3
+silero-vad>=5.1
+ffmpeg-python>=0.2.0
+scipy>=1.11.0
+soundfile>=0.12.1
+numpy<2.0.0
+resemblyzer>=0.1.3
+
+# Additional AI/ML
+accelerate>=0.25.0
+safetensors>=0.4.0
+
+# Utility
+aiofiles>=23.2.1
+pydantic>=2.0.0
+modal>=0.63.0
+python-dotenv>=1.0.0
